@@ -576,6 +576,8 @@
                 <a
                   href="https://themesberg.com/product/ui-kits/neumorphism-ui"
                   class="btn btn-primary mb-3 mb-lg-0 mr-3"
+                  id="btn-daftar"
+                  style="position: fixed"
                   >DAFTAR SEKARANG</a
                 >
               </div>
@@ -637,7 +639,11 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary btn-sm">Selengkapnya</a>
+                  <a
+                    href="pengumuman_detail.html"
+                    class="btn btn-primary btn-sm"
+                    >Selengkapnya</a
+                  >
                 </div>
               </div>
             </div>
@@ -684,7 +690,11 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary btn-sm">Selengkapnya</a>
+                  <a
+                    href="pengumuman_detail.html"
+                    class="btn btn-primary btn-sm"
+                    >Selengkapnya</a
+                  >
                 </div>
               </div>
             </div>
@@ -731,7 +741,11 @@
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </p>
-                  <a href="#" class="btn btn-primary btn-sm">Selengkapnya</a>
+                  <a
+                    href="pengumuman_detail.html"
+                    class="btn btn-primary btn-sm"
+                    >Selengkapnya</a
+                  >
                 </div>
               </div>
             </div>
@@ -941,5 +955,20 @@
 
     <!-- Neumorphism JS -->
     <script src="./assets/js/neumorphism.js"></script>
+
+    <script>
+      $("#btn-daftar").on("mouseover", function () {
+        var h = $(window).height() - 50;
+        var w = $(window).width() - 50;
+
+        var nh = Math.floor(Math.random() * h);
+        var nw = Math.floor(Math.random() * w);
+
+        $(this).css({
+          top: nh + "px",
+          left: nw + "px",
+        });
+      });
+    </script>
   </body>
 </html>
